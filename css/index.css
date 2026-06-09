@@ -1,0 +1,85 @@
+/* 首页内容样式 */
+.banner {
+	height: 500px;
+	background-color: #F5F5F5;
+}
+.banner .wrapper{
+	position: relative;
+	height: 500px;
+	overflow: hidden;
+	/* background-color: pink; */
+}
+/* 图片 */
+.banner .pic{
+	display: flex;
+	/* flex布局导致子级被挤小，要增大父级尺寸 */
+	/* 第一种方法width: 3720px; */
+}
+/* 第二种方法 */
+.banner .pic img{
+	width: 1240px;
+}
+/* 侧导航 */
+.subnav{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 250px;
+	height: 500px;
+	background-color: rgba(0, 0, 0, 0.42);
+}
+.subnav li{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 30px;
+	padding-right: 12px;
+	height: 50px;
+	/* background-color: pink; */
+	line-height: 50px;
+	color: #FFF;
+	cursor: pointer;
+}
+.subnav li a{
+	margin-right: 5px;
+	font-size: 14px;
+	color: #FFF;
+}
+.subnav li .classify{
+	margin-right: 14px;
+	font-size: 16px;
+}
+.subnav li .iconfont{
+	font-size: 14px;
+}
+.subnav li:hover{
+	background-color: #00BE9A;
+}
+/* 圆点指示器 */
+.banner ol{
+	position: absolute;
+	bottom: 17px;
+	right: 16px;
+	display: flex;
+}
+.banner ol li{
+	width: 22px;
+	height: 22px;
+	/* background-color: pink; */
+	border-radius: 50%;
+	margin-left: 8px;
+	cursor: pointer;
+}
+.banner ol i{
+	display: block;
+	width: 14px;
+	height: 14px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	margin: 4px;
+}
+.banner ol .current{
+	background-color: rgba(255, 255, 255,0.5);
+}
+.banner ol .current i{
+	background-color: #FFF;
+}
